@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My To Do List</title>
+    <style>
+        ul li:nth-child(odd) {
+            background: #c6bada;
+            height: 50px;
+            width: 800px;
+            font-size: 15pt;
+        }
+
+        ul li:nth-child(even) {
+            background: #d3bff5;
+            height: 50px;
+            width: 800px;
+            font-size: 16pt;
+        }
+
+        /*ul li:nth-child(2), ul li:nth-child(5), ul li:nth-child(11) {*/
+        /*    content: url("checked_16.png");*/
+        /*    !*content: url("checked_16.png");*!*/
+        /*    !*margin: 50px 20px 70px 50px;*!*/
+        /*    !*font-size: 35px;*!*/
+        /*    !*background: #f0f0f0;*!*/
+        /*    !*height: 50px;*!*/
+        /*    !*width: 800px;*!*/
+        /*    !*font-size: 16pt;*!*/
+        /*    !*text-decoration: line-through;*!*/
+        /*    !*list-style-position: inside;*!*/
+        /*}*/
+
+        .checked:before {
+            content: url("checked_16.png");
+
+        }
+        .checked span{
+            text-decoration: line-through;
+        }
+
+        li {
+            list-style-type: none;
+
+        }
+
+        li:before {
+            content: url("unchecked_16.png");
+            margin: 50px 20px 70px 50px;
+            font-size: 35px;
+        }
+
+
+        .kr:after {
+            content: '\274C';
+            font-size: 12px;
+        }
+
+        h2 {
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>My To Do List</h2>
+<table>
+    <ul>
+        <li class="kr"><span>Hit the gym </span>&emsp;</li>
+        <li class="kr checked"><span>Pay bills</span> &emsp;</li>
+        <li class="kr"><span>Meet John</span> &emsp;</li>
+        <li class="kr"><span>Buy eggs</span> &emsp;</li>
+        <li class="kr checked"><span>Read a book</span> &emsp;</li>
+        <li class="kr"><span>Organize office</span> &emsp;</li>
+        <li class="kr"><span>Eat dinner</span> &emsp;</li>
+        <li class="kr"><span>Buy apples</span> &emsp;</li>
+        <li class="kr"><span>Meet George</span> &emsp;</li>
+        <li class="kr"><span>Feed the cat</span> &emsp;</li>
+        <li class="kr checked"><span>Write a letter</span> &emsp;</li>
+        <li class="kr"><span>Run 1 km</span> &emsp;</li>
+    </ul>
+</table>
+</body>
+</html>
